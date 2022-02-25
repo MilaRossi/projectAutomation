@@ -13,6 +13,10 @@ public class Account {
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
              Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
          */
+        if (name == null) {
+            System.out.println("Имя равно null");
+            return false;
+        }
 
         if (name.isEmpty()) {
             System.out.println("Имя не заполнено");
